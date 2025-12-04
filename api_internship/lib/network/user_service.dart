@@ -14,7 +14,7 @@ class UserService {
     if (_baseUrl == null) {
       throw Exception('API_BASE_URL not found in .env file');
     }
-    final String url = '$_baseUrl/user/$userId';
+    final String url = '$_baseUrl/users/$userId';
 
     try {
       final http.Response response = await http.get(Uri.parse(url));
